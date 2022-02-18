@@ -1,0 +1,20 @@
+type: horizontal-stack
+cards:
+  - type: button
+    tap_action:
+      action: toggle
+    icon: mdi:car
+    entity: script.rc_stop
+    name: ' '
+  - type: button
+    tap_action:
+      action: toggle
+    entity: script.rc_rev_2s
+    icon: mdi:arrow-down-bold
+    name: Reverse
+  - type: button
+    tap_action:
+      action: toggle
+    icon: mdi:car
+    entity: script.rc_stop
+    name: ' '
