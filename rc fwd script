@@ -1,0 +1,24 @@
+alias: RC Fwd 0s5
+sequence:
+  - type: turn_on
+    device_id: b6ddf4b08e8bc197bc5ef71a3bb73f2c
+    entity_id: switch.reverse
+    domain: switch
+  - type: turn_on
+    device_id: b6ddf4b08e8bc197bc5ef71a3bb73f2c
+    entity_id: switch.left
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - type: turn_off
+    device_id: b6ddf4b08e8bc197bc5ef71a3bb73f2c
+    entity_id: switch.left
+    domain: switch
+  - type: turn_off
+    device_id: b6ddf4b08e8bc197bc5ef71a3bb73f2c
+    entity_id: switch.reverse
+    domain: switch
+mode: single
