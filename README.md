@@ -7,5 +7,5 @@ this project consist of
 3. esphome code for esp32cam
 4. esphome code for 8266
 5. script at Homeassistant (for foward, reverse, right, left and stop)
-6. Horizontal Stack Card Configuration at Homeassistant (button for foward, reverse, right, left and stop)
+6. Horizontal Stack Card Configuration at Homeassistant (button for foward, reverse, right, left and stop) sample file only for reverse
 
