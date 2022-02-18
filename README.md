@@ -6,6 +6,6 @@ this project consist of
 2. hardware esp8266 - to control rc car motor (refer https://randomnerdtutorials.com/esp32-dc-motor-l298n-motor-driver-control-speed-direction/)
 3. esphome code for esp32cam
 4. esphome code for 8266
-5. script at Homeassistant (for foward, reverse, right, left and stop)
+5. script at Homeassistant (for foward, reverse, right, left and stop) sample file only for foward
 6. Horizontal Stack Card Configuration at Homeassistant (button for foward, reverse, right, left and stop) sample file only for reverse
 
