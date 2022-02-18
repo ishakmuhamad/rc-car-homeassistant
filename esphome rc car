@@ -1,0 +1,54 @@
+esphome:
+  name: rc-car
+
+esp8266:
+  board: nodemcuv2
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: !secret wifi_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Rc-Car Fallback Hotspot"
+    password: !secret wifi_password
+
+captive_portal:
+
+switch:
+  - platform: gpio
+    pin: GPIO5
+    name: "Foward"
+    id: fowardinput
+  - platform: gpio
+    pin: GPIO4
+    name: "Reverse"
+    id: reverseinput
+  - platform: gpio
+    pin: GPIO14
+    name: "Right"
+    id: rightinput
+  - platform: gpio
+    pin: GPIO12
+    name: "Left"
+    id: leftinput
+  - platform: gpio
+    pin: 
+      number: GPIO2
+      inverted: true
+    name: "RC LED"
+    id: ledinput
+    
+    
+    
+web_server:
+  port: 80
